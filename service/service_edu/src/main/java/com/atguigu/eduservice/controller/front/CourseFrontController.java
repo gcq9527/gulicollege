@@ -1,6 +1,7 @@
 package com.atguigu.eduservice.controller.front;
 
 import com.atguigu.commonutils.R;
+import com.atguigu.commonutils.ordervo.CourseWebVoOrder;
 import com.atguigu.eduservice.entity.EduCourse;
 import com.atguigu.eduservice.entity.chapter.ChapterVo;
 import com.atguigu.eduservice.entity.frontvo.CourseFrontVo;
@@ -10,6 +11,7 @@ import com.atguigu.eduservice.service.EduCourseService;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -54,8 +56,18 @@ public class CourseFrontController {
 
         return R.ok().data("courseWebVo",courseWebVo).data("chapterVideoList",chapterVoList);
 
-
     }
+
+    @PostMapping("/getCourseInfoOrder/{id}")
+    public CourseWebVoOrder getCourseInfoOrder(@PathVariable String id) {
+        CourseWebVo courseInfo = courseService.getBaseCourseInfo(id);
+        CourseWebVoOrder courseWebVoOrder = new CourseWebVoOrder();
+        BeanUtils.copyProperties(courseInfo,courseWebVoOrder);
+        return courseWebVoOrder;
+    }
+
+
+
 
 
 }

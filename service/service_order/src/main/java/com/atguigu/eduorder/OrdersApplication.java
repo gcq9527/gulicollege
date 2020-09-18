@@ -1,4 +1,4 @@
-package com.atguigu.educenter;
+package com.atguigu.eduorder;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
@@ -9,15 +9,15 @@ import org.springframework.context.annotation.ComponentScan;
 
 /**
  * @author gcq
- * @Create 2020-09-16
+ * @Create 2020-09-18
  */
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableFeignClients
-@ComponentScan({"com.atguigu"})
-@MapperScan("com.atguigu.educenter.mapper")
-public class UcenterMemberApplication {
+@ComponentScan(basePackages = {"com.atguigu"})
+@MapperScan("com.atguigu.eduorder.mapper")
+public class OrdersApplication {
     public static void main(String[] args) {
-        SpringApplication.run(UcenterMemberApplication.class, args);
+        SpringApplication.run(OrdersApplication.class, args);
     }
 }

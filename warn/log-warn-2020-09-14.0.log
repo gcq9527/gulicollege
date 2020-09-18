@@ -1,0 +1,92 @@
+2020-09-14 11:43:23.009 [http-nio-8001-exec-8] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLException: Field 'subject_parent_id' doesn't have a default value
+### The error may involve com.atguigu.eduservice.mapper.EduCourseMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO edu_course  ( id, teacher_id, subject_id,  title, price, lesson_num, cover )  VALUES  ( ?, ?, ?,  ?, ?, ?, ? )
+### Cause: java.sql.SQLException: Field 'subject_parent_id' doesn't have a default value
+; Field 'subject_parent_id' doesn't have a default value; nested exception is java.sql.SQLException: Field 'subject_parent_id' doesn't have a default value]
+2020-09-14 11:44:38.595 [http-nio-8001-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLException: Field 'subject_parent_id' doesn't have a default value
+### The error may involve com.atguigu.eduservice.mapper.EduCourseMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO edu_course  ( id, teacher_id, subject_id,  title, price, lesson_num, cover )  VALUES  ( ?, ?, ?,  ?, ?, ?, ? )
+### Cause: java.sql.SQLException: Field 'subject_parent_id' doesn't have a default value
+; Field 'subject_parent_id' doesn't have a default value; nested exception is java.sql.SQLException: Field 'subject_parent_id' doesn't have a default value]
+2020-09-14 11:47:05.237 [http-nio-8001-exec-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLException: Field 'subject_parent_id' doesn't have a default value
+### The error may involve com.atguigu.eduservice.mapper.EduCourseMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO edu_course  ( id, teacher_id, subject_id,  title, price, lesson_num, cover )  VALUES  ( ?, ?, ?,  ?, ?, ?, ? )
+### Cause: java.sql.SQLException: Field 'subject_parent_id' doesn't have a default value
+; Field 'subject_parent_id' doesn't have a default value; nested exception is java.sql.SQLException: Field 'subject_parent_id' doesn't have a default value]
+2020-09-14 11:50:01.419 [http-nio-8001-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLException: Field 'gmt_create' doesn't have a default value
+### The error may involve com.atguigu.eduservice.mapper.EduCourseMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO edu_course  ( id, teacher_id, subject_id,  title, price, lesson_num, cover )  VALUES  ( ?, ?, ?,  ?, ?, ?, ? )
+### Cause: java.sql.SQLException: Field 'gmt_create' doesn't have a default value
+; Field 'gmt_create' doesn't have a default value; nested exception is java.sql.SQLException: Field 'gmt_create' doesn't have a default value]
+2020-09-14 12:43:23.226 [http-nio-8001-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.atguigu.commonutils.R com.atguigu.eduservice.controller.EduCourseController.addCourseInfo(com.atguigu.eduservice.entity.vo.CourseInfoVo)]
+2020-09-14 14:43:03.325 [http-nio-8001-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'description' at row 1
+### The error may involve com.atguigu.eduservice.mapper.EduCourseDescriptionMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO edu_course_description  ( id, description, gmt_create, gmt_modified )  VALUES  ( ?, ?, ?, ? )
+### Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'description' at row 1
+; Data truncation: Data too long for column 'description' at row 1; nested exception is com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'description' at row 1]
+2020-09-14 14:43:13.421 [http-nio-8001-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'description' at row 1
+### The error may involve com.atguigu.eduservice.mapper.EduCourseDescriptionMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO edu_course_description  ( id, description, gmt_create, gmt_modified )  VALUES  ( ?, ?, ?, ? )
+### Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'description' at row 1
+; Data truncation: Data too long for column 'description' at row 1; nested exception is com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'description' at row 1]
+2020-09-14 16:19:24.079 [http-nio-8001-exec-6] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.IllegalArgumentException: Source must not be null]
+2020-09-14 16:19:28.252 [http-nio-8001-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.IllegalArgumentException: Source must not be null]
+2020-09-14 16:19:30.355 [http-nio-8001-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.IllegalArgumentException: Source must not be null]
+2020-09-14 16:20:39.273 [http-nio-8001-exec-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2020-09-14 17:01:23.349 [http-nio-8001-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.dao.DuplicateKeyException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1305430065651146754' for key 'PRIMARY'
+### The error may involve com.atguigu.eduservice.mapper.EduCourseMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO edu_course  ( id, teacher_id, subject_id, subject_parent_id, title, price, lesson_num, cover,      gmt_create, gmt_modified )  VALUES  ( ?, ?, ?, ?, ?, ?, ?, ?,      ?, ? )
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1305430065651146754' for key 'PRIMARY'
+; Duplicate entry '1305430065651146754' for key 'PRIMARY'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1305430065651146754' for key 'PRIMARY']
+2020-09-14 17:01:27.278 [http-nio-8001-exec-6] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.dao.DuplicateKeyException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1305430065651146754' for key 'PRIMARY'
+### The error may involve com.atguigu.eduservice.mapper.EduCourseMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO edu_course  ( id, teacher_id, subject_id, subject_parent_id, title, price, lesson_num, cover,      gmt_create, gmt_modified )  VALUES  ( ?, ?, ?, ?, ?, ?, ?, ?,      ?, ? )
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1305430065651146754' for key 'PRIMARY'
+; Duplicate entry '1305430065651146754' for key 'PRIMARY'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1305430065651146754' for key 'PRIMARY']
+2020-09-14 17:01:34.391 [http-nio-8001-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.dao.DuplicateKeyException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1305430065651146754' for key 'PRIMARY'
+### The error may involve com.atguigu.eduservice.mapper.EduCourseMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO edu_course  ( id, teacher_id, subject_id, subject_parent_id, title, price, lesson_num, cover,      gmt_create, gmt_modified )  VALUES  ( ?, ?, ?, ?, ?, ?, ?, ?,      ?, ? )
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1305430065651146754' for key 'PRIMARY'
+; Duplicate entry '1305430065651146754' for key 'PRIMARY'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1305430065651146754' for key 'PRIMARY']
+2020-09-14 17:31:22.820 [http-nio-8001-exec-6] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.atguigu.commonutils.R com.atguigu.eduservice.controller.EduCourseController.updateCourseInfo(com.atguigu.eduservice.entity.vo.CourseInfoVo)]
+2020-09-14 20:43:32.793 [http-nio-8001-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.dao.DuplicateKeyException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1305484098441170945' for key 'PRIMARY'
+### The error may involve com.atguigu.eduservice.mapper.EduChapterMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO edu_chapter  ( id, course_id, title, sort, gmt_create, gmt_modified )  VALUES  ( ?, ?, ?, ?, ?, ? )
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1305484098441170945' for key 'PRIMARY'
+; Duplicate entry '1305484098441170945' for key 'PRIMARY'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1305484098441170945' for key 'PRIMARY']
+2020-09-14 20:46:48.969 [http-nio-8001-exec-9] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.atguigu.commonutils.R com.atguigu.eduservice.controller.EduChapterController.updateChapter(com.atguigu.eduservice.entity.EduChapter)]
+2020-09-14 20:47:54.953 [http-nio-8001-exec-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.atguigu.commonutils.R com.atguigu.eduservice.controller.EduChapterController.updateChapter(com.atguigu.eduservice.entity.EduChapter)]
+2020-09-14 21:18:56.217 [http-nio-8001-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLException: Field 'chapter_id' doesn't have a default value
+### The error may involve com.atguigu.eduservice.mapper.EduVideoMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO edu_video  ( id, course_id,            gmt_create, gmt_modified )  VALUES  ( ?, ?,            ?, ? )
+### Cause: java.sql.SQLException: Field 'chapter_id' doesn't have a default value
+; Field 'chapter_id' doesn't have a default value; nested exception is java.sql.SQLException: Field 'chapter_id' doesn't have a default value]
+2020-09-14 21:19:52.850 [http-nio-8001-exec-6] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLException: Field 'chapter_id' doesn't have a default value
+### The error may involve com.atguigu.eduservice.mapper.EduVideoMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO edu_video  ( id, course_id,            gmt_create, gmt_modified )  VALUES  ( ?, ?,            ?, ? )
+### Cause: java.sql.SQLException: Field 'chapter_id' doesn't have a default value
+; Field 'chapter_id' doesn't have a default value; nested exception is java.sql.SQLException: Field 'chapter_id' doesn't have a default value]
