@@ -19,13 +19,12 @@ import java.util.Map;
  */
 @RestController
 @RequestMapping("/eduorder/pay")
-@CrossOrigin
 public class PayLogController {
 
     @Autowired
     private PayLogService payLogService;
 
-    @ApiOperation("准备好微信支付数据")
+    @ApiOperation("生成微信支付二维码接口")
     @GetMapping("/createNative/{orderNo}")
     public R createNative(@PathVariable String orderNo) {
         Map map = payLogService.createNative(orderNo);
@@ -36,14 +35,14 @@ public class PayLogController {
     @ApiOperation("订单号 查询支付状态")
     @GetMapping("/queryPayStatus/{orderNo}")
     public R queryPayStatus(@PathVariable String orderNo) {
+        // 请求微信接口 判断支付状态是否是SUCCESS
         Map<String,String> map = payLogService.queryPayStatus(orderNo);
         if (map == null) {
             return R.error().message("支付出错了");
         }
-        // 如果返回map里面不为空，通过map获取订单状态
-        // 支付成功
-        if (map.get("trade_state").equals("SUCCESS")) {
-            // 添加记录到支付表，更新订单表状态
+        //如果返回map里面不为空，通过map获取订单状态
+        if(map.get("trade_state").equals("SUCCESS")) {//支付成功
+            //添加记录到支付表，更新订单表订单状态
             payLogService.updateOrderStatus(map);
             return R.ok().message("支付成功");
         }

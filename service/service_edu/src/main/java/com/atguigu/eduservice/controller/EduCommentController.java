@@ -25,7 +25,6 @@ import java.util.Map;
 @Api("课程描述")
 @RestController
 @RequestMapping("/eduservice/comment")
-@CrossOrigin
 public class EduCommentController {
 
     @Autowired

@@ -71,11 +71,11 @@ public class PayLogServiceImpl extends ServiceImpl<PayLogMapper, PayLog> impleme
 
             //最终返回数据 的封装
             Map map = new HashMap();
-            map.put("out_trade_no", orderNo); // 订单号
-            map.put("course_id", order.getCourseId()); //课程id
-            map.put("total_fee", order.getTotalFee()); // 订单金额
-            map.put("result_code", resultMap.get("result_code"));  // 返回二维码操作状态码
-            map.put("code_url", resultMap.get("code_url"));        // 二维码地址
+            map.put("out_trade_no", orderNo);
+            map.put("course_id", order.getCourseId());
+            map.put("total_fee", order.getTotalFee());
+            map.put("result_code", resultMap.get("result_code"));  //返回二维码操作状态码
+            map.put("code_url", resultMap.get("code_url"));        //二维码地址
 
             return map;
         } catch (Exception e) {
@@ -106,6 +106,7 @@ public class PayLogServiceImpl extends ServiceImpl<PayLogMapper, PayLog> impleme
             //6、转成Map再返回
             return resultMap;
         }catch(Exception e) {
+            e.printStackTrace();
             return null;
         }
     }
@@ -119,6 +120,7 @@ public class PayLogServiceImpl extends ServiceImpl<PayLogMapper, PayLog> impleme
         wrapper.eq("order_no",orderNo);
         Order order = orderService.getOne(wrapper);
 
+        // 等于1 已支付 结束
         if (order.getStatus().intValue() == 1) { return; }
         // 1 代表已经支付
         order.setStatus(1);
@@ -136,5 +138,6 @@ public class PayLogServiceImpl extends ServiceImpl<PayLogMapper, PayLog> impleme
         payLog.setTransactionId(map.get("transaction_id")); //流水号
         payLog.setAttr(JSONObject.toJSONString(map));
 
+        baseMapper.insert(payLog);
     }
 }

@@ -26,7 +26,6 @@ import javax.servlet.http.HttpServletRequest;
 @Api(description = "用户注册以及登录")
 @RestController
 @RequestMapping("/educenter/member")
-@CrossOrigin
 public class UcenterMemberController {
 
 
@@ -39,8 +38,6 @@ public class UcenterMemberController {
         String token = memberService.login(member);
         return R.ok().data("token",token);
     }
-
-
 
     // 注册
     @PostMapping("/register")
@@ -73,6 +70,14 @@ public class UcenterMemberController {
         UcenterMemberOrder ucenterMemberOrder = new UcenterMemberOrder();
         BeanUtils.copyProperties(member,ucenterMemberOrder);
         return ucenterMemberOrder;
+    }
+
+
+    @ApiOperation("查询某一天注册人数")
+    @GetMapping("/countRegister/{day}")
+    public R countRegister(@PathVariable String day) {
+        Integer count = memberService.countRegisterDay(day);
+        return R.ok().data("countRegister",count);
     }
 
 }

@@ -1,7 +1,6 @@
 package com.atguigu.eduservice.client;
 
 import com.atguigu.commonutils.R;
-import com.atguigu.eduservice.client.impl.VodFileDegradeFeignClientImpl;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -14,7 +13,7 @@ import java.util.List;
  * @author gcq
  * @Create 2020-09-15
  */
-@FeignClient(value = "service-vod",fallback = VodFileDegradeFeignClientImpl.class)
+@FeignClient(value = "service-vod")
 @Component
 public interface VodClient {
 

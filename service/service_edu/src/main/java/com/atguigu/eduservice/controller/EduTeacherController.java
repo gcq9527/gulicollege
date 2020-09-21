@@ -30,7 +30,6 @@ import java.util.Map;
 @Api(description = "讲师管理")
 @RestController
 @RequestMapping("/eduservice/edu-teacher")
-@CrossOrigin //解决跨越
 public class EduTeacherController {
 
 

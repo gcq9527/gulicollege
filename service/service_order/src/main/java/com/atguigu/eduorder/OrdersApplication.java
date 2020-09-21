@@ -12,10 +12,10 @@ import org.springframework.context.annotation.ComponentScan;
  * @Create 2020-09-18
  */
 @SpringBootApplication
-@EnableDiscoveryClient
-@EnableFeignClients
 @ComponentScan(basePackages = {"com.atguigu"})
 @MapperScan("com.atguigu.eduorder.mapper")
+@EnableDiscoveryClient
+@EnableFeignClients
 public class OrdersApplication {
     public static void main(String[] args) {
         SpringApplication.run(OrdersApplication.class, args);

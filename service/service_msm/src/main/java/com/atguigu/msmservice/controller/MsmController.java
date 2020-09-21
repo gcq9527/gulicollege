@@ -21,7 +21,6 @@ import java.util.concurrent.TimeUnit;
 @Api(description = "短信发送")
 @RestController
 @RequestMapping("/edumsm/msm")
-@CrossOrigin
 public class MsmController {
 
     @Autowired
